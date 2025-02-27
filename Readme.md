@@ -14,8 +14,8 @@ SkyStore is a secure cloud-based file storage application built with **Node.js, 
 ## 🚀 Features
 
 - 🔐 **User Authentication**: Secure signup, login, and logout using JWT.
-- 📤 **File Upload**: Upload files to **Cloudinary**.
-- 📥 **File Management**: View, download, and delete files.
+- 📄 **File Upload**: Upload files to **Cloudinary**.
+- 📅 **File Management**: View, download, and delete files.
 - 🎨 **Modern UI**: Responsive design using **Tailwind CSS & Flowbite**.
 - 🌌 **Interactive Background**: Animated canvas background for an engaging experience.
 
@@ -29,11 +29,11 @@ SkyStore is a secure cloud-based file storage application built with **Node.js, 
 - **Session Management**: express-session
 - **File Handling**: Multer, Express-fileupload
 
-## 📦 Installation
+## 🛆 Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/aavdisd07/SkyStore.git
+git clone https://github.com/yourusername/SkyStore.git
 cd SkyStore
 
 # Install dependencies
@@ -64,7 +64,7 @@ SkyStore/
 └── README.md           # Documentation
 ```
 
-## 📖 Usage
+## 📚 Usage
 
 ### 🔑 Authentication
 1. **Signup**: Enter details and create an account.
@@ -76,6 +76,20 @@ SkyStore/
 2. **Download**: Click the download button to get a file.
 3. **Delete**: Remove unwanted files with a single click.
 
+## 📸 Screenshots
+
+### Signup Page
+![Signup Page](public/images/signup.png)
+
+### Login Page
+![Login Page](public/images/login.png)
+
+### Home Page
+![Home Page](public/images/home.png)
+
+### File Upload Popup
+![File Upload Popup](public/images/upload.png)
+
 ## 🤝 Contributing
 
 1. Fork the repo.
@@ -83,17 +97,18 @@ SkyStore/
 3. Commit changes: `git commit -m 'Add new feature'`.
 4. Push and create a pull request.
 
-## 📜 License
+## 💜 License
 
 This project is licensed under the **MIT License**.
 
 ## 📩 Contact
 
-For questions or feedback, contact **[Avantika Deshmukh](mailto:2021bit153@sggs.ac.in)**.
+For questions or feedback, contact **[Your Name](mailto:your.email@example.com)**.
 
 ---
 
-Thanks for using **SkyStore**! 🚀☁️
+Thanks for using **SkyStore**! 🚀️☁️
+
 
 
 
