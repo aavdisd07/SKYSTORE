@@ -102,7 +102,7 @@ This project is licensed under the **MIT License**.
 
 ## 📩 Contact
 
-For questions or feedback, contact **[Your Name](mailto:your.email@example.com)**.
+For questions or feedback, contact **[Avantika Deshmukh](mailto:2021bit153@sggs.ac.in)**.
 
 ---
 
