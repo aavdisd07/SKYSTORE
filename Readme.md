@@ -32,7 +32,7 @@ SkyStore is a secure cloud-based file storage application built with **Node.js, 
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/SkyStore.git
+git clone https://github.com/aavdisd07/SkyStore.git
 cd SkyStore
 
 # Install dependencies
