@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.0.0/dist/flowbite.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <style>
-        body {
+       body {
             font-family: 'Inter', sans-serif;
             color: #1f2937;
             position: relative;
@@ -39,7 +39,7 @@
         main {
             position: relative;
             z-index: 10;
-            padding: 2rem;
+            padding: 1rem;
             max-width: 1200px;
             margin: 0 auto;
             min-height: 100vh;
@@ -49,39 +49,118 @@
             background: linear-gradient(135deg, rgba(59, 130, 246, 0.9), rgba(30, 64, 175, 0.9));
             border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
             backdrop-filter: blur(5px);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: space-between;
+            align-items: center;
         }
         
         .content-container {
             background-color: rgba(255, 255, 255, 0.85);
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            padding: 1.5rem;
+            padding: 1rem;
             backdrop-filter: blur(10px);
         }
         
-        .upload-btn {
-            background-color: #534ea9;
+        .upload-btn, .logout-btn {
             transition: all 0.3s ease;
             border: none;
             font-weight: 600;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.625rem 1rem;
         }
         
-        .upload-btn:hover {
-            background-color: #4338ca;
+        .upload-btn:hover, .logout-btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         
         .file-card {
-            /* background-color: white; */
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
             transition: all 0.3s ease;
             border-left: 4px solid #3b82f6;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+        }
+        
+        .file-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        /* Responsive adjustments */
+        @media screen and (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            .file-card {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+            
+            .file-actions {
+                width: 100%;
+                justify-content: space-between;
+            }
+            
+            .upload-form {
+                width: 90%;
+                margin: 0 auto;
+            }
+            
+            .dropzone {
+                height: 250px;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            main {
+                padding: 0.5rem;
+            }
+            
+            .header-container {
+                padding: 0.75rem;
+            }
+            
+            .upload-btn, .logout-btn {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .file-actions {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+        
+        /* Rest of the existing styles remain the same */
+        .upload-btn { background-color: #534ea9; }
+        .upload-btn:hover { background-color: #4338ca; }
+        
+        .logout-btn {
+            background-color: #ef4444;
+        }
+        
+        .logout-btn:hover {
+            background-color: #dc2626;
         }
         
         .file-card:hover {
